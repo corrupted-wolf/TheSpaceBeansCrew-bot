@@ -1,0 +1,6 @@
+from discord.ext.commands import has_permission
+
+@bot.command(pass_context=True)
+@has_permission(administrator=True)
+async def some_command(ctx):
+    # something to do.

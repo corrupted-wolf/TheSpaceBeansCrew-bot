@@ -1,0 +1,16 @@
+static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "playing by myself";
+    discordPresence.details = "Eating meat";
+    discordPresence.startTimestamp = 91993003;
+    discordPresence.largeImageKey = "untitled47_20210212191417_1_";
+    discordPresence.largeImageText = "Numbani";
+    discordPresence.smallImageKey = "white_wolf";
+    discordPresence.smallImageText = "Rogue - Level 100";
+    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+    discordPresence.partySize = 1;
+    discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+    Discord_UpdatePresence(&discordPresence);
+}
