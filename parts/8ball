@@ -1,4 +1,0 @@
-@client.command(aliases=['8ball'])
-async def _8ball(ctx, *, question):
-  responses = ['It is certain.', 'Yes - defenitely.', 'You may rely on it.', 'Yes.', 'Most likely.', 'My reply is no.', 'Cannot predict now.', 'My sources say no.', 'Ask again later.', 'As I see it yes.', 'Nah.', 'Yas.', 'Nevaaaa!', 'Duh.', 'You do not deserve an answer.']
-  await ctx.send(f'Question:{question}\nAnswer: {random.choice(responses)}')
